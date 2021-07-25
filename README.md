@@ -1,6 +1,6 @@
 ## Usage
 You just change the hidden layers, batch size and learning rate in 
-file ```train.py``` and run following script:
+file ```train.py``` and run the following script:
 ```bash
 $ python train.py
 ```
