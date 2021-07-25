@@ -6,4 +6,4 @@ $ python train.py
 ```
 
 ## Results 
-The current setting achieved 97.3% in MNIST dataset.
+The current setting achieved 97.3% accuracy in MNIST dataset.
