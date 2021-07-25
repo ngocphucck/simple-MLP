@@ -24,7 +24,7 @@ class CrossEntropyLoss(object):
     def backward(self):
         for i in range(len(self.grads) // 3, 0, -1):
             if i == len(self.grads) // 3:
-                self.grads["dZ" + str(i)] = -self.caches["A" + str(i)] + self.labels
+                self.grads["dZ" + str(i)] = self.caches["A" + str(i)] - self.labels
             else:
                 self.grads["dZ" + str(i)] = np.dot(self.parameters["W" + str(i + 1)].T,
                                                    self.grads["dZ" + str(i + 1)]) * \

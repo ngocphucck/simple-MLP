@@ -3,7 +3,7 @@ import numpy as np
 
 def softmax(tensor):
 
-    return np.exp(-tensor) / np.sum(np.exp(-tensor), axis=0)
+    return np.exp(tensor) / np.sum(np.exp(tensor), axis=0)
 
 
 def relu(tensor):
